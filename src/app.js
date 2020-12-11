@@ -1,22 +1,20 @@
-const express = require("express");
-const helmet = require("helmet");
-const cors = require("cors");
-const { FRONT_URL } = require("./common/config");
+const express = require('express');
+const helmet = require('helmet');
+const path = require('path');
+const cors = require('cors');
 
-require("express-async-errors");
+require('express-async-errors');
 
 const app = express();
 
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.resolve(__dirname, '../client')));
 
-app.use("/", (req, res, next) => {
-  if (req.originalUrl === "/") {
-    res.statusCode = 302;
-    res.setHeader("Location", FRONT_URL);
-    res.end();
-    return;
+app.use('/', (req, res, next) => {
+  if (req.originalUrl === '/') {
+    res.sendFile(path.resolve(__dirname, '../client'), 'index.html');
   }
   next();
 });
