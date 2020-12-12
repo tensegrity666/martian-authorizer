@@ -7,7 +7,7 @@
     "client:watch": "parcel watch ./client/*.html",
     "client:serve": "parcel serve ./client/index.html --port 3000",
     "client:build": "parcel build ./client/*.html",
-    "serverless:build": "netlify-lambda build express",
+    "serverless:build": "netlify-lambda build ./server",
     "start": "nodemon src/server.js",
     "lint": "stylelint ./client/**/*.css --syntax css --fix && eslint ./ --fix",
     "release": "standard-version"
