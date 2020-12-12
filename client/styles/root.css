@@ -1,3 +1,20 @@
 :root {
   overflow-y: hidden;
+
+  /* COLORS */
+  --martian-green: #9fa628;
+  --martian-transparent: #a0a628c5;
+  --light: #ffffff;
+  --light-transparent: #ffffffef;
+  --dark: #7b7b7b;
+  --acid-orange: #ff7b00;
+  --acid-transparent: #ff7b00c5;
+
+  /* THEME */
+  --logo-color: var(--martian-transparent);
+  --controls-fill-color: var(--martian-green);
+  --controls-border-color: var(--dark);
+  --controls-filled-font-color: var(--light);
+  --controls-bordered-font-color: var(--dark);
+  --controls-bordered-bg-color: var(--light-transparent);
 }

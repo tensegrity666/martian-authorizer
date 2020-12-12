@@ -25,6 +25,7 @@
     "express": "4.17.1",
     "express-async-errors": "^3.1.1",
     "helmet": "^4.2.0",
+    "postcss-nested": "^5.0.3",
     "serverless-http": "^2.6.0"
   },
   "devDependencies": {
@@ -39,7 +40,8 @@
     "lint-staged": "10.5.3",
     "netlify-lambda": "^2.0.1",
     "nodemon": "2.0.6",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-nightly.476",
+    "postcss": "^8.2.1",
     "prettier": "^2.2.1",
     "standard-version": "^9.0.0",
     "stylelint": "^13.8.0",
