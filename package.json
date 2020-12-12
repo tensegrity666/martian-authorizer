@@ -7,6 +7,7 @@
     "client:watch": "parcel watch ./client/*.html",
     "client:serve": "parcel serve ./client/index.html --port 3000",
     "client:build": "parcel build ./client/*.html",
+    "serverless:build": "netlify-lambda build express",
     "start": "nodemon src/server.js",
     "lint": "stylelint ./client/**/*.css --syntax css --fix && eslint ./ --fix",
     "release": "standard-version"
@@ -23,7 +24,8 @@
     "dotenv": "^8.2.0",
     "express": "4.17.1",
     "express-async-errors": "^3.1.1",
-    "helmet": "^4.2.0"
+    "helmet": "^4.2.0",
+    "serverless-http": "^2.6.0"
   },
   "devDependencies": {
     "commitlint": "^11.0.0",
@@ -35,6 +37,7 @@
     "eslint-plugin-prettier": "^3.2.0",
     "husky": "4.3.5",
     "lint-staged": "10.5.3",
+    "netlify-lambda": "^2.0.1",
     "nodemon": "2.0.6",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.2.1",
