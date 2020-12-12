@@ -4,9 +4,9 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "client:watch": "parcel watch ./client/index.html",
-    "client:serve": "parcel ./client/index.html --port 3000",
-    "client:build": "parcel build ./client/index.html",
+    "client:watch": "parcel watch ./client/*.html",
+    "client:serve": "parcel serve ./client/index.html --port 3000",
+    "client:build": "parcel build ./client/*.html",
     "start": "nodemon src/server.js",
     "lint": "stylelint ./client/**/*.css --syntax css --fix && eslint ./ --fix",
     "release": "standard-version"

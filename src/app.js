@@ -3,6 +3,10 @@ const helmet = require('helmet');
 const path = require('path');
 const cors = require('cors');
 
+const loginRouter = require('./resources/login/login.router');
+const registerRouter = require('./resources/register/register.router');
+const welcomeRouter = require('./resources/welcome/welcome.router');
+
 require('express-async-errors');
 
 const app = express();
@@ -19,7 +23,9 @@ app.use('/', (req, res, next) => {
   next();
 });
 
-// app.use('/login', loginRouter);
+app.use('/login', loginRouter);
+app.use('/registration', registerRouter);
+app.use('/welcome', welcomeRouter);
 
 // process
 //   .on('unhandledRejection', rejectionHandler)

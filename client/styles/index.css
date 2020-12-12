@@ -1,0 +1,67 @@
+@import "./normalize.css";
+@import "./visually-hidden.css";
+@import "./root.css";
+
+.main-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.logo {
+  position: relative;
+  top: 33vh;
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 120px;
+  fill: #a0a628c5;
+}
+
+.buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 90px;
+  padding: 18px 15px;
+  margin: 0;
+  list-style: none;
+  background: #ffffffef;
+}
+
+.buttons_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 136px;
+  height: 52px;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.buttons_button__bordered {
+  color: #7b7b7b;
+  border: 2px solid #7b7b7b;
+}
+
+.buttons_button__filled {
+  color: #ffffff;
+  background-color: #9fa628;
+  border: 2px solid #9fa628;
+}

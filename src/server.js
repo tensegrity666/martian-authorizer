@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
-const { PORT = 8000 } = require("./common/config");
-const app = require("./app");
+const { PORT = 8000 } = require('./config');
+const app = require('./app');
 
 const startApp = async () => {
   try {
