@@ -195,15 +195,10 @@ input[type="radio"].visually-hidden {
 
 .logo {
   position: relative;
-  top: 30vh;
-  left: calc(50% - 40px);
-  width: 100px;
-  height: 100px;
-}
-
-.logo_inner {
-  width: 100px;
-  height: 100px;
+  top: 35vh;
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 120px;
   fill: #a0a628c5;
 }
 

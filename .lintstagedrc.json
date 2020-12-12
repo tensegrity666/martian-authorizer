@@ -1,4 +1,4 @@
 {
   "*.js": ["prettier --write", "npm run lint"],
-  "*.+(css)": ["stylelint src/**/*.css --syntax css --fix"]
+  "*.css": ["stylelint src/**/*.css --syntax css --fix"]
 }
