@@ -17,8 +17,8 @@
   position: relative;
   top: 33vh;
   left: calc(50% - 60px);
-  width: 120px;
-  height: 120px;
+  width: var(--logo-size);
+  height: var(--logo-size);
   fill: var(--logo-color);
 }
 
@@ -41,23 +41,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 136px;
-    height: 52px;
-    font-size: 13px;
-    line-height: 16px;
+    width: var(--button-standart-width);
+    height: var(--button-height);
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-font-lh);
     text-align: center;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
 
     &__bordered {
       color: var(--controls-bordered-font-color);
-      border: 2px solid var(--controls-border-color);
+      border: var(--border-thin) solid var(--controls-border-color);
     }
 
     &__filled {
       color: var(--controls-filled-font-color);
       background-color: var(--controls-fill-color);
-      border: 2px solid var(--controls-fill-color);
+      border: var(--border-thin) solid var(--controls-fill-color);
     }
+  }
+}
+
+.link-back {
+  &::before {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    content: '';
+    background-image: url(../assets/arrow-back.svg) no-repeat;
   }
 }

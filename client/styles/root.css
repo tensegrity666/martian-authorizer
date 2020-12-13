@@ -17,4 +17,14 @@
   --controls-filled-font-color: var(--light);
   --controls-bordered-font-color: var(--dark);
   --controls-bordered-bg-color: var(--light-transparent);
+
+  /* SIZES */
+  --logo-size: 120px;
+  --button-standart-width: 136px;
+  --button-double-width: 136px;
+  --button-height: 52px;
+  --mobile-font-size: 13px;
+  --mobile-font-lh: 16px;
+  --border-thin: 2px;
+  --border-radius: 6px;
 }
