@@ -14,6 +14,8 @@
   <meta content="./assets/social-t-53349d7.png" name="twitter:image">
   <meta content="@LoremIpsumN" name="twitter:site">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/index.css">
   <link as="image" href="./assets/em-bg-video-poster-7a3bddc.jpg" rel="preload">
   <link href="./assets/favicon-32x32-ea3e870.png" rel="icon" sizes="32x32" type="image/png">
@@ -23,17 +25,17 @@
 </head>
 <body>
   <h1 class="visually-hidden">Martian Authorizer: Login page</h1>
-  <main class="main-container">
-    <h2>Log in</h2>
+  <main class="main-container main-container__form">
+    <h2 class="title">Log in</h2>
     <a class="link-back" href="/">
       <span class="visually-hidden">Back</span>
     </a>
-    <form action="login" method="post">
-      <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" placeholder="example@email.com" required>
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" required minlength="8">
-      <button type="submit">Register</button>
+    <form class="form" action="login" method="post">
+      <label class="visually-hidden" for="email">E-mail</label>
+      <input class="form_field" type="email" name="email" id="email" placeholder="example@email.com" required>
+      <label class="visually-hidden" for="password">Password</label>
+      <input class="form_field" type="password" name="password" id="password" placeholder="password" required minlength="8">
+      <button class="button form_button" type="submit">Log in</button>
     </form>
   </main>
 

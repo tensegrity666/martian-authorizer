@@ -1,6 +1,18 @@
 .main-container {
   position: relative;
   min-height: 100vh;
+
+  &__form {
+    padding: 104px 14px 0;
+  }
+
+  &__welcome {
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    align-items: center;
+    justify-items: center;
+    padding: 0 14px;
+  }
 }
 
 .bg-video {
@@ -22,7 +34,22 @@
   fill: var(--logo-color);
 }
 
-.buttons {
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--button-height);
+  font-family: var(--font-main);
+  font-size: var(--mobile-font-size);
+  font-weight: 600;
+  line-height: var(--mobile-font-lh);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+}
+
+.buttons-group {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -35,19 +62,10 @@
   padding: 18px 15px;
   margin: 0;
   list-style: none;
-  background: var(--controls-bordered-bg-color);
+  background: var(--background-light);
 
   &_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: var(--button-standart-width);
-    height: var(--button-height);
-    font-size: var(--mobile-font-size);
-    line-height: var(--mobile-font-lh);
-    text-align: center;
-    text-decoration: none;
-    border-radius: var(--border-radius);
 
     &__bordered {
       color: var(--controls-bordered-font-color);
@@ -65,12 +83,40 @@
 .link-back {
   &::before {
     position: absolute;
-    top: 40px;
-    left: 10px;
+    top: 60px;
+    left: 15px;
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
     content: '';
-    background-image: url(../assets/arrow-back.svg) no-repeat;
+    background-image: url(../assets/arrow-back.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.title {
+  margin: 0 0 32px;
+  font-family: var(--font-title);
+  color: var(--controls-fill-color);
+
+  &__welcome {
+    text-align: center;
+  }
+}
+
+.form {
+  &_field {
+    width: 100%;
+    padding: 17px 14px;
+    margin-bottom: 16px;
+    border: 2px solid var(--controls-border-color);
+    border-radius: 0;
+  }
+
+  &_button {
+    width: 100%;
+    color: var(--controls-filled-font-color);
+    background-color: var(--controls-fill-color);
+    border: var(--border-thin) solid var(--controls-fill-color);
   }
 }
