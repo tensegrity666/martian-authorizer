@@ -16,7 +16,7 @@
     "release": "standard-version"
   },
   "type": "commonjs",
-  "keywords": [],
+  "keywords": ["html", "css", "javascript", "competition", "evil martians"],
   "author": "Roman Yakovlev",
   "license": "MIT",
   "browserslist": "defaults",

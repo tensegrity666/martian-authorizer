@@ -31,6 +31,9 @@
   --border-thin: 2px;
   --border-radius: 6px;
 
+  /* OTHER */
+  --video-filter: grayscale(0.1) saturate(0.4) brightness(0.6);
+
   overflow-y: hidden;
   font-family: var(--font-main);
 }
