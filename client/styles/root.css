@@ -15,6 +15,7 @@
   /* THEME */
   --logo-color: var(--martian-transparent);
   --background-light: var(--light);
+  --background--transparent: var(--light-transparent);
   --controls-fill-color: var(--martian-green);
   --controls-border-color: var(--dark);
   --controls-filled-font-color: var(--light);
@@ -25,6 +26,7 @@
   --logo-size: 120px;
   --button-standart-width: 136px;
   --button-double-width: 136px;
+  --button-extra-width: 205px;
   --button-height: 52px;
   --mobile-font-size: 13px;
   --mobile-font-lh: 16px;
