@@ -73,7 +73,7 @@
   }
 
   .form_button__wide {
-    grid-row: 6;
+    grid-row: 5;
     grid-column: 4 / span 6;
     width: var(--button-extra-width);
   }
@@ -125,6 +125,10 @@
 }
 
 @media (min-width: 1430px) {
+  :root {
+    overflow: hidden;
+  }
+
   .logo {
     top: 90px;
     left: 60px;
