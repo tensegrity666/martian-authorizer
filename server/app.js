@@ -1,12 +1,14 @@
+/* eslint-disable no-console */
+
 const express = require('express');
 const serverless = require('serverless-http');
 const helmet = require('helmet');
 const path = require('path');
 const cors = require('cors');
 
-const loginRouter = require('./resources/login/login.router');
-const registerRouter = require('./resources/register/register.router');
-const welcomeRouter = require('./resources/welcome/welcome.router');
+const loginRouter = require('./resources/login.router');
+const registerRouter = require('./resources/register.router');
+const welcomeRouter = require('./resources/welcome.router');
 
 require('express-async-errors');
 
@@ -30,10 +32,6 @@ app.use('/', (req, res, next) => {
 app.use('/login', loginRouter);
 app.use('/registration', registerRouter);
 app.use('/welcome', welcomeRouter);
-
-// process
-//   .on('unhandledRejection', rejectionHandler)
-//   .on('uncaughtException', exceptionHandler);
 
 module.exports = app;
 module.exports.handler = serverless(app);

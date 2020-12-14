@@ -16,7 +16,13 @@
     "release": "standard-version"
   },
   "type": "commonjs",
-  "keywords": ["html", "css", "javascript", "competition", "evil martians"],
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "competition",
+    "evil martians"
+  ],
   "author": "Roman Yakovlev",
   "license": "MIT",
   "browserslist": "defaults",
@@ -32,6 +38,7 @@
     "serverless-http": "^2.6.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.1.0",
     "commitlint": "^11.0.0",
     "eslint": "7.15.0",
     "eslint-config-airbnb-base": "^14.2.1",

@@ -36,6 +36,6 @@
   /* OTHER */
   --video-filter: grayscale(0.1) saturate(0.4) brightness(0.6);
 
-  overflow-y: hidden;
+  overflow: hidden;
   font-family: var(--font-main);
 }
