@@ -1,0 +1,10 @@
+.button {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button:hover {
+  filter: saturate(5);
+  backdrop-filter: brightness(30);
+  transition: var(--transition);
+}

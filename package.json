@@ -12,7 +12,7 @@
     "serverless:build": "netlify-lambda build ./server",
     "start": "nodemon src/server.js",
     "lint": "stylelint ./client/**/*.css --syntax css --fix && eslint ./ --fix",
-    "deploy": "npm run lint && netlify deploy --prod",
+    "deploy": "npm run lint && npm run client:build && netlify deploy --prod",
     "release": "standard-version"
   },
   "type": "commonjs",

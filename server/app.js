@@ -8,7 +8,6 @@ const cors = require('cors');
 
 const loginRouter = require('./resources/login.router');
 const registerRouter = require('./resources/register.router');
-const welcomeRouter = require('./resources/welcome.router');
 
 require('express-async-errors');
 
@@ -30,8 +29,7 @@ app.use('/', (req, res, next) => {
 });
 
 app.use('/login', loginRouter);
-app.use('/registration', registerRouter);
-app.use('/welcome', welcomeRouter);
+app.use('/register', registerRouter);
 
 module.exports = app;
 module.exports.handler = serverless(app);

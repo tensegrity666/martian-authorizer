@@ -35,6 +35,7 @@
 
   /* OTHER */
   --video-filter: grayscale(0.1) saturate(0.4) brightness(0.6);
+  --transition: all 0.3s linear;
 
   overflow-y: auto;
   font-family: var(--font-main);

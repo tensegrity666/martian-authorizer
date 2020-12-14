@@ -5,8 +5,10 @@ router.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../../dist', 'register.html'));
 });
 
-router.post('/', async (req, res) => {
-  res.redirect('/welcome');
+router.post('/welcome', async (req, res) => {
+  if (req.body) {
+    res.redirect('https://martian.tensegrity666.site/welcome');
+  }
 });
 
 module.exports = router;
