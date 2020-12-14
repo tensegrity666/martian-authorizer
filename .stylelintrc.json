@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-recess-order"
+],
+  "rules": {
+    "selector-nested-pattern": "^&",
+    "declaration-no-important": true,
+    "color-hex-length": "long",
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignoreTypes": ["focus", "active"]
+      }
+    ]
+  }
+}

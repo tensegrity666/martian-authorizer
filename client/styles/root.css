@@ -1,0 +1,42 @@
+:root {
+  /* FONTS */
+  --font-title: 'Comfortaa', cursive;
+  --font-main: 'Roboto', sans-serif;
+
+  /* COLORS */
+  --martian-green: #9fa628;
+  --martian-transparent: #a0a628c5;
+  --light: #ffffff;
+  --light-transparent: #ffffffef;
+  --dark: #7b7b7b;
+  --acid-orange: #ff7b00;
+  --acid-transparent: #ff7b00c5;
+
+  /* THEME */
+  --logo-color: var(--martian-transparent);
+  --background-light: var(--light);
+  --background--transparent: var(--light-transparent);
+  --controls-fill-color: var(--martian-green);
+  --controls-border-color: var(--dark);
+  --controls-filled-font-color: var(--light);
+  --controls-bordered-font-color: var(--dark);
+  --controls-bordered-bg-color: var(--light-transparent);
+
+  /* SIZES */
+  --logo-size: 120px;
+  --button-standart-width: 136px;
+  --button-double-width: 136px;
+  --button-extra-width: 205px;
+  --button-height: 52px;
+  --mobile-font-size: 13px;
+  --mobile-font-lh: 16px;
+  --border-thin: 2px;
+  --border-radius: 6px;
+
+  /* OTHER */
+  --video-filter: grayscale(0.1) saturate(0.4) brightness(0.6);
+  --transition: all 0.3s linear;
+
+  overflow-y: auto;
+  font-family: var(--font-main);
+}
